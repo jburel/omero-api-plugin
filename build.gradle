@@ -1,7 +1,7 @@
 plugins {
     id "groovy"
+    id "maven-publish"
     id "java-gradle-plugin"
-    id "org.openmicroscopy.project" version "5.5.0-SNAPSHOT"
 }
 
 group = "org.openmicroscopy"
@@ -25,3 +25,13 @@ gradlePlugin {
         }
     }
 }
+
+// Change the name of the artifact id publication
+//publishing {
+//    publications {
+//        mavenJava(MavenPublication) {
+//            setArtifactId "apiplugin"
+//            from components.java
+//        }
+//    }
+//}
