@@ -7,6 +7,9 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
 
+before_script:
+  - git clone -b m4 git@github.com:rgozim/omero-artifact-plugin.git
+  - gradle publishToMavenLocal
 script:
   - ./gradlew publishToMavenLocal
 
