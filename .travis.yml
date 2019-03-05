@@ -9,6 +9,7 @@ cache:
 
 before_script:
   - git clone -b m4 git@github.com:rgozim/omero-artifact-plugin.git
+  - cd omero-artifact-plugin
   - ./gradlew publishToMavenLocal
 
 script:
